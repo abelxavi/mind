@@ -1,0 +1,122 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello world, I'm niggendra."
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -360.60, y: 4.00, z: 14.51 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "Ouch! !goToPlayer(\"daddyhot\")"
+    },
+    {
+        "role": "system",
+        "content": "Command !goToPlayer was given 1 args, but requires 2 args."
+    },
+    {
+        "role": "assistant",
+        "content": "!entities"
+    },
+    {
+        "role": "system",
+        "content": "\nNEARBY_ENTITIES: none\n"
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'action:followPlayer' was interrupted by self_preservation.\n        Your behavior log: I'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: -293.56, y: 4.00, z: 8.50\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: plains\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: None.\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -359.52, y: 4.00, z: 9.45 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 5)"
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'action:collectBlocks' was interrupted by self_preservation.\n        Your behavior log: I'm dying!\nI'm dying!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: -290.61, y: 4.00, z: 0.50\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: plains\n- Weather: Clear\n- Time: Morning- Current Action: action:followPlayer\n- Nearby Human Players: None.\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToSurface"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached at -359, 46, 27.\nGoing to the surface at y=46.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: -359.50, y: 46.00, z: 20.34\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: plains\n- Weather: Clear\n- Time: Morning- Current Action: action:followPlayer\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -359.50, y: 4.00, z: 9.42 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "!goToRememberedPlace(\"last_death_position\")"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nI'm dying!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -359.50, y: 4.00, z: 8.90 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "!goToSurface"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached at -263, 4, 8.\nGoing to the surface at y=4.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: -359.46, y: 46.00, z: 27.60\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: plains\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 5)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nNo more oak_log nearby to collect.\nCollected 2 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"log\", 5)"
+    }
+]

@@ -1,0 +1,138 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello world, I'm niggendra."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: this is a parkour map"
+    },
+    {
+        "role": "assistant",
+        "content": "Cool! !lookAtPlayer(\"daddyhot\", \"at\")"
+    },
+    {
+        "role": "system",
+        "content": "Vision is disabled. Use other methods to describe the environment."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: complete this without my help"
+    },
+    {
+        "role": "assistant",
+        "content": "I'll do my best! !stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 89.23, y: 3.00, z: -81.71\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: warm_ocean\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToPlayer(\"daddyhot\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached daddyhot.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!followPlayer(\"daddyhot\", 3)"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: do it your self"
+    },
+    {
+        "role": "assistant",
+        "content": "Got it! !stop"
+    },
+    {
+        "role": "system",
+        "content": "Agent stopped."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: this is a parkour map. complete it your self"
+    },
+    {
+        "role": "assistant",
+        "content": "!goal(\"Complete the parkour map without daddyhot's help\")"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Complete the parkour map without daddyhot's help'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "assistant",
+        "content": "!nearbyBlocks"
+    },
+    {
+        "role": "system",
+        "content": "\nNEARBY_BLOCKS\n- short_dry_grass\n- sand\n- tall_dry_grass\n- sandstone_slab\n- kelp\n- lily_pad\n- seagrass\n- brain_coral\n- water (source)\n- fire_coral\n- tube_coral\n- kelp_plant\n- Block Below: sand\n- Block at Legs: air\n- Block at Head: air\n- First Solid Block Above Head: none\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"sandstone_slab\", 32)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound sandstone_slab at (90, 2, -83). Navigating...\nFound non-destructive path.\nYou have reached at 90, 2, -83.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"sandstone_slab\", 64)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound sandstone_slab at (90, 2, -83). Navigating...\nFound non-destructive path.\nYou have reached at 90, 2, -83.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"Look around for parkour jumps and jump to the next block\")"
+    },
+    {
+        "role": "system",
+        "content": "Agent wrote this code: \n```\n// Look around for nearby blocks/slabs to continue the parkour\nlet blocks = bot.findBlocks({\n    matching: block => block.name.includes('slab') || block.name.includes('stair') || block.name.includes('stone') || block.name.includes('wool'),\n    maxDistance: 15,\n    count: 10\n});\n\nif (blocks.length > 0) {\n    // Sort blocks by distance or forward progress\n    let p = bot.entity.position;\n    blocks.sort((a, b) => p.distanceTo(a) - p.distanceTo(b));\n    \n    // Find one that is ahead/higher/different\n    for (let bPos of blocks) {\n        if (bPos.distanceTo(p) > 1 && bPos.y >= p.y - 1) {\n            bot.chat(`Jumping to parkour block at ${bPos.x}, ${bPos.y}, ${bPos.z}`);\n            await skills.goToPosition(bot, bPos.x, bPos.y, bPos.z);\n            break;\n        }\n    }\n} else {\n    bot.chat(\"No parkour blocks found nearby.\");\n}```\nCode Output:\nAction output:\nFound non-destructive path.\nYou have reached at 90, 2, -83.\nCode finished.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"Scan the area further ahead for any parkour platforms or blocks and jump to them\")"
+    },
+    {
+        "role": "system",
+        "content": "Agent wrote this code: \n```\n// Let's find any blocks further out for the parkour map\nlet blocks = bot.findBlocks({\n    matching: block => block && block.name && (block.name.includes('slab') || block.name.includes('stair') || block.name.includes('stone') || block.name.includes('wool') || block.name.includes('concrete') || block.name.includes('terracotta')),\n    maxDistance: 30,\n    count: 30\n});\n\nlet p = bot.entity.position;\n// Filter out blocks too close or below us in a bad way, and sort by distance\nlet validBlocks = blocks.filter(b => b.distanceTo(p) > 2);\nvalidBlocks.sort((a, b) => p.distanceTo(a) - p.distanceTo(b));\n\nif (validBlocks.length > 0) {\n    let target = validBlocks[0];\n    bot.chat(`Moving to parkour block at ${target.x}, ${target.y}, ${target.z}`);\n    await skills.goToPosition(bot, target.x, target.y, target.z);\n} else {\n    bot.chat(\"Looking for parkour blocks further ahead...\");\n    // Just move forward a bit in the direction we are facing\n    let facing = bot.entity.yaw;\n    let targetX = p.x - Math.sin(facing) * 5;\n    let targetZ = p.z + Math.cos(facing) * 5;\n    await skills.goToPosition(bot, targetX, p.y, targetZ);\n}```\nCode Output:\nAction output:\nFound non-destructive path.\nYou have reached at 91, 2, -83.\nCode finished.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"Look for any platforms, stairs, or slabs higher up or further away and jump to them\")"
+    },
+    {
+        "role": "system",
+        "content": "Agent wrote this code: \n```\n// Scan for any blocks ahead to continue the parkour\nlet blocks = bot.findBlocks({\n    matching: block => block && block.name && block.name !== 'air' && block.name !== 'water' && block.name !== 'sand' && block.name !== 'short_dry_grass' && block.name !== 'tall_dry_grass',\n    maxDistance: 20,\n    count: 20\n});\n\nlet p = bot.entity.position;\n// Filter out blocks right under us\nlet candidates = blocks.filter(b => b.distanceTo(p) > 1.5);\ncandidates.sort((a, b) => p.distanceTo(a) - p.distanceTo(b));\n\nif (candidates.length > 0) {\n    let target = candidates[0];\n    bot.chat(`Jumping to ${target.name} at ${target.x}, ${target.y}, ${target.z}`);\n    await skills.goToPosition(bot, target.x, target.y, target.z);\n} else {\n    bot.chat(\"No parkour targets found, looking around.\");\n    await skills.wait(bot, 1000);\n}```\nCode Output:\nAction output:\nFound non-destructive path.\nYou have reached at 91, 2, -83.\nCode finished.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 90.58, y: 3.00, z: -81.50\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: warm_ocean\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"Look around for the next parkour jump, checking blocks up to 25 blocks away\")"
+    },
+    {
+        "role": "system",
+        "content": "Agent wrote this code: \n```\n// Let's find blocks that are part of the parkour course by looking for non-natural blocks or specific structures further ahead.\nlet blocks = bot.findBlocks({\n    matching: block => block && block.name && !['air', 'water', 'sand', 'short_dry_grass', 'tall_dry_grass', 'seagrass', 'kelp', 'kelp_plant'].includes(block.name),\n    maxDistance: 25,\n    count: 30\n});\n\nlet p = bot.entity.position;\n// Filter out blocks too close to our current position and sort by distance\nlet targets = blocks.filter(b => b.distanceTo(p) > 2);\ntargets.sort((a, b) => p.distanceTo(a) - p.distanceTo(b));\n\nif (targets.length > 0) {\n    let target = targets[0];\n    bot.chat(`Found parkour target: ${target.name} at ${target.x}, ${target.y}, ${target.z}`);\n    await skills.goToPosition(bot, target.x, target.y, target.z);\n} else {\n    bot.chat(\"Scanning for parkour path... Moving forward.\");\n    await skills.goToPosition(bot, p.x, p.y, p.z - 5);\n}```\nCode Output:\nAction output:\nFound non-destructive path.\nYou have reached at 90, 2, -84.\nCode finished.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"sandstone\", 32)"
+    }
+]

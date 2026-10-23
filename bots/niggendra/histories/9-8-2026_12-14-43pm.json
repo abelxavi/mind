@@ -1,0 +1,86 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: hi"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: hi"
+    },
+    {
+        "role": "assistant",
+        "content": "hello world, I'm niggendra!"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nPicking up item!\nPicking up item!"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: hi"
+    },
+    {
+        "role": "assistant",
+        "content": "Hey daddyhot! What's up?"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: follow me"
+    },
+    {
+        "role": "assistant",
+        "content": "On it! !followPlayer(\"daddyhot\", 2)"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: stop"
+    },
+    {
+        "role": "assistant",
+        "content": "Sure, I'll stop. !stop"
+    },
+    {
+        "role": "system",
+        "content": "Agent stopped."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: make a chest and give to me"
+    },
+    {
+        "role": "assistant",
+        "content": "I'll make a chest for you. !goal(\"1. Collect wood logs. 2. Craft planks and a chest. 3. Give chest to daddyhot.\")"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: '1. Collect wood logs. 2. Craft planks and a chest. 3. Give chest to daddyhot.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"spruce_log\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 3 spruce_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!craftRecipe(\"spruce_planks\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nSuccessfully crafted spruce_planks, you now have 8 spruce_planks.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!craftRecipe(\"chest\", 1)"
+    }
+]

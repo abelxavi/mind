@@ -1,0 +1,42 @@
+[
+    {
+        "role": "system",
+        "content": "\nNEARBY_ENTITIES\n- entities: 1 pillager(s)\n"
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: hi"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi daddyhot! !lookAtPlayer(\"daddyhot\", \"at\")"
+    },
+    {
+        "role": "system",
+        "content": "Vision is disabled. Use other methods to describe the environment."
+    },
+    {
+        "role": "user",
+        "content": "Abeljii: WT THIS AI?"
+    },
+    {
+        "role": "assistant",
+        "content": "!startConversation(\"Abeljii\", \"Hey! I'm niggendra, your friendly Minecraft bot.\")"
+    },
+    {
+        "role": "system",
+        "content": "Abeljii is not a bot, cannot start conversation."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: hi"
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    }
+]

@@ -1,0 +1,162 @@
+[
+    {
+        "role": "system",
+        "content": "Action output:\nCould not find any sandstone in 32 blocks.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"terracotta\", 32)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCould not find any terracotta in 32 blocks.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"concrete\", 32)"
+    },
+    {
+        "role": "system",
+        "content": "Invalid block type: concrete."
+    },
+    {
+        "role": "assistant",
+        "content": "!nearbyBlocks"
+    },
+    {
+        "role": "system",
+        "content": "\nNEARBY_BLOCKS\n- sandstone_slab\n- sand\n- seagrass\n- water (source)\n- short_dry_grass\n- tall_dry_grass\n- brain_coral\n- lily_pad\n- kelp\n- kelp_plant\n- tube_coral\n- fire_coral\n- Block Below: sand\n- Block at Legs: sandstone_slab\n- Block at Head: air\n- First Solid Block Above Head: none\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"Scan for any block ahead that we can jump to and move towards it\")"
+    },
+    {
+        "role": "system",
+        "content": "Agent wrote this code: \n```\n// Scan for any blocks ahead to continue the parkour course\nlet blocks = bot.findBlocks({\n    matching: block => block && block.name && !['air', 'water', 'sand', 'short_dry_grass', 'tall_dry_grass', 'seagrass', 'kelp', 'kelp_plant'].includes(block.name),\n    maxDistance: 32,\n    count: 40\n});\n\nlet p = bot.entity.position;\n// Filter out blocks we are already standing on or too close to, and sort by distance and height\nlet targets = blocks.filter(b => b.distanceTo(p) > 2);\ntargets.sort((a, b) => p.distanceTo(a) - p.distanceTo(b));\n\nif (targets.length > 0) {\n    let target = targets[0];\n    bot.chat(`Jumping to ${target.name} at ${target.x}, ${target.y}, ${target.z}`);\n    await skills.goToPosition(bot, target.x, target.y, target.z);\n} else {\n    bot.chat(\"No parkour blocks found nearby, moving forward to explore.\");\n    await skills.goToPosition(bot, p.x, p.y, p.z - 4);\n}```\nCode Output:\nAction output:\nFound non-destructive path.\nYou have reached at 89, 2, -85.\nCode finished.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 90.51, y: 2.50, z: -83.42\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: warm_ocean\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"Look around for any parkour jumps or platforms ahead and move to the next one\")"
+    },
+    {
+        "role": "system",
+        "content": "Error generating code: ApiError: {\"error\":{\"code\":429,\"message\":\"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 15, model: gemini-3.5-flash-lite\\nPlease retry in 45.696208669s.\",\"status\":\"RESOURCE_EXHAUSTED\",\"details\":[{\"@type\":\"type.googleapis.com/google.rpc.Help\",\"links\":[{\"description\":\"Learn more about Gemini API quotas\",\"url\":\"https://ai.google.dev/gemini-api/docs/rate-limits\"}]},{\"@type\":\"type.googleapis.com/google.rpc.QuotaFailure\",\"violations\":[{\"quotaMetric\":\"generativelanguage.googleapis.com/generate_content_free_tier_requests\",\"quotaId\":\"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\",\"quotaDimensions\":{\"location\":\"global\",\"model\":\"gemini-3.5-flash-lite\"},\"quotaValue\":\"15\"}]},{\"@type\":\"type.googleapis.com/google.rpc.RetryInfo\",\"retryDelay\":\"45s\"}]}}"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Complete the parkour map without daddyhot's help'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Complete the parkour map without daddyhot's help'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Complete the parkour map without daddyhot's help'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 90.51, y: 2.50, z: -83.42\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: warm_ocean\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(90, 2, -87)"
+    },
+    {
+        "role": "system",
+        "content": "Command !goToCoordinates was given 3 args, but requires 4 args."
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(90.5, 2.5, -87.0)"
+    },
+    {
+        "role": "system",
+        "content": "Command !goToCoordinates was given 3 args, but requires 4 args."
+    },
+    {
+        "role": "assistant",
+        "content": "!goal(\"Complete the parkour map without daddyhot's help\")"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Complete the parkour map without daddyhot's help'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Complete the parkour map without daddyhot's help'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"Look around for the parkour path and walk towards the next jump.\")"
+    },
+    {
+        "role": "system",
+        "content": "Error generating code: TypeError: text.replace is not a function"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 90.51, y: 2.50, z: -83.42\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: warm_ocean\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!nearbyBlocks"
+    },
+    {
+        "role": "system",
+        "content": "\nNEARBY_BLOCKS\n- sandstone_slab\n- sand\n- seagrass\n- water (source)\n- short_dry_grass\n- tall_dry_grass\n- brain_coral\n- lily_pad\n- kelp\n- kelp_plant\n- tube_coral\n- fire_coral\n- Block Below: sand\n- Block at Legs: sandstone_slab\n- Block at Head: air\n- First Solid Block Above Head: none\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!entities"
+    },
+    {
+        "role": "system",
+        "content": "\nNEARBY_ENTITIES\n- Human player: daddyhot\n- entities: 2 text_display(s)\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(95, 2, -80, 0)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nPath not found, but attempting to navigate anyway using destructive movements.\nUnable to reach 95, 2, -80, you are 1 blocks away.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(95, 2, -75, 0)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nPath not found, but attempting to navigate anyway using destructive movements.\nYou have reached at 95, 2, -75.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(100, 2, -70, 0)"
+    }
+]

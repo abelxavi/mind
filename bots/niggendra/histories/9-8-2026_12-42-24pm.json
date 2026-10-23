@@ -1,0 +1,42 @@
+[
+    {
+        "role": "system",
+        "content": "Action output:\n"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Find lava, get water, make obsidian, and build a nether portal all by myself.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Find lava, get water, make obsidian, and build a nether portal all by myself.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Find lava, get water, make obsidian, and build a nether portal all by myself.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"lava\", 64)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound lava at (9, 50, -73). Navigating...\nPath not found, but attempting to navigate anyway using destructive movements.\nPathfinding stopped: Took to long to decide path to goal!.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(9, 50, -73, 3)"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Find lava, get water, make obsidian, and build a nether portal all by myself.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"lava\", 64)"
+    },
+    {
+        "role": "system",
+        "content": "Killing agent process..."
+    }
+]

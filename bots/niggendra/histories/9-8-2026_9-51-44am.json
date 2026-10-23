@@ -1,0 +1,46 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nFighting enderman!\nFighting enderman!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: 606.55, y: 51.00, z: -108.53 in the overworld dimension with the final message: 'niggendra was slain by Enderman'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Disconnected from MindServer. Killing agent process."
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nFighting enderman!\nFighting enderman!"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: Removed 1 item(s) from player niggendra]"
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    }
+]

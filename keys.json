@@ -1,10 +1,10 @@
 {
     "OPENAI_API_KEY": "",
     "OPENAI_ORG_ID": "",
-    "GEMINI_API_KEY": "",
+    "GEMINI_API_KEY": "AQ.Ab8RN6Li8mKr_7MIWC2a4F__dhV0LA8KznwCLSJ7-3xkPBPvfA",
     "ANTHROPIC_API_KEY": "",
     "REPLICATE_API_KEY": "",
-    "GROQCLOUD_API_KEY": "",
+    "GROQCLOUD_API_KEY": "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",
     "HUGGINGFACE_API_KEY": "",
     "QWEN_API_KEY": "",
     "XAI_API_KEY": "",

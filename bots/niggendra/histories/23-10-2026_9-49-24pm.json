@@ -1,0 +1,26 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello world, I'm niggendra!"
+    },
+    {
+        "role": "user",
+        "content": "Abeljii: COME TO ME"
+    },
+    {
+        "role": "assistant",
+        "content": "On my way! !goToPlayer(\"Abeljii\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCould not find Abeljii.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "I can't find Abeljii. !stats"
+    }
+]

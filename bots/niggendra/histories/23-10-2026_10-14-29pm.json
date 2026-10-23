@@ -1,0 +1,22 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello world, I'm niggendra!\t"
+    },
+    {
+        "role": "user",
+        "content": "ADMIN: hi"
+    },
+    {
+        "role": "assistant",
+        "content": "Hi! !stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 1795.50, y: 125.00, z: 827.50\n- Gamemode: survival\n- Health: 11 / 20\n- Hunger: 17 / 20\n- Biome: meadow\n- Weather: Thunderstorm\n- Time: Night- Current Action: Idle\n- Nearby Human Players: None.\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    }
+]

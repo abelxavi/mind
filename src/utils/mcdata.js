@@ -53,6 +53,7 @@ export const WOOL_COLORS = [
 
 
 export function initBot(username) {
+    mc_version = settings.minecraft_version;
     const options = {
         username: username,
         host: settings.host,

@@ -1,0 +1,90 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello world, I'm niggendra!"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: what is your current task?"
+    },
+    {
+        "role": "assistant",
+        "content": "Just exploring and hanging out, daddyhot!"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: what is your gamemode?"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 94.50, y: 3.00, z: -39.50\n- Gamemode: adventure\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: warm_ocean\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: daddyhot\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "My gamemode is adventure, daddyhot!"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: complete this parkour map"
+    },
+    {
+        "role": "assistant",
+        "content": "I'm on it! !goToPlayer(\"daddyhot\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached daddyhot.\n"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: start"
+    },
+    {
+        "role": "assistant",
+        "content": "Let's go! !goToPlayer(\"daddyhot\", 2)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached daddyhot.\n"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: this is a parkour map. complete it your self"
+    },
+    {
+        "role": "assistant",
+        "content": "Got it! !goToSurface"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nPath not found, but attempting to navigate anyway using destructive movements.\nUnable to reach 94, 16, -41, you are 13 blocks away.\nGoing to the surface at y=16.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!newAction(\"look around for parkour path or jumps and move forward\")"
+    },
+    {
+        "role": "system",
+        "content": "newAction not allowed! Code writing is disabled in settings. Notify the user."
+    },
+    {
+        "role": "assistant",
+        "content": "Code writing is disabled, so I can't run that action. !stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 99.51, y: 3.00, z: -43.50\n- Gamemode: adventure\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: warm_ocean\n- Weather: Clear\n- Time: Morning- Current Action: Idle\n- Nearby Human Players: None.\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!nearbyBlocks"
+    }
+]

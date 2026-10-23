@@ -1,0 +1,198 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nFighting zombie!\nFighting zombie!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -13.01, y: 72.94, z: -46.64 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: Fighting zombie!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -5.77, y: 75.00, z: -50.36 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: Fighting zombie!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -19.50, y: 69.00, z: -24.61 in the overworld dimension with the final message: 'niggendra was shot by Skeleton'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nFighting zombie!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -4.51, y: 71.00, z: -44.50 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: Fighting zombie!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: Fighting zombie!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm at x:-47.36 y:80 z:-62.5, health 1/20, night, with three zombies nearby. I’ve just respawned and need to get to safety. !moveAway(10)"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nFighting zombie!\nFighting zombie!"
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'action:moveAway' was interrupted by self_defense.\n        Your behavior log: \nRespond accordingly."
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -42.19, y: 76.77, z: -61.50 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: Picking up item!\nFighting skeleton!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -1.50, y: 71.00, z: -43.60 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nFighting zombie!\nPicking up item!\nFighting skeleton!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -10.75, y: 70.00, z: -32.25 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nPicking up item!\nFighting zombie!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -13.70, y: 71.00, z: -43.69 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "I'm at x -13.70, y 71, z -43.69 in the overworld, health 0 (just respawned). Zombies killed me, and I’ve been repeatedly interrupted by combat and low‑health warnings. I need to create distance, find shelter, gather basic resources (wood, stone), craft tools, and secure food to survive the night."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nFighting zombie!\nPicking up item!\nFighting creeper!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -6.21, y: 70.00, z: -35.49 in the overworld dimension with the final message: 'niggendra was blown up by Creeper'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "I’ve respawned at the world spawn (around x -12.5, y 84, z -56.5) with full health and hunger. After a series of deaths to zombies and a creeper, I’m back in a clear‑weather morning in an old‑growth spruce taiga. My inventory is empty, so the next steps are to gather basic resources (wood, then stone), craft essential tools (pickaxe, axe, sword), and find or build a shelter before night falls again. If you want me to head back to the last death spot or start gathering right away, just let me know."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nFighting zombie!\nPicking up item!\nFighting zombie!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -28.67, y: 71.00, z: -59.41 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: \nRespond accordingly."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: Fighting zombie!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -31.30, y: 70.00, z: -40.61 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "(AUTO MESSAGE)Your previous action 'mode:self_defense' was interrupted by self_preservation.\n        Your behavior log: I'm dying!\nFighting zombie!\nI'm dying!\n\nRespond accordingly."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nFighting zombie!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -55.54, y: 71.00, z: -38.39 in the overworld dimension with the final message: 'niggendra was slain by Zombie'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "My brain disconnected, try again."
+    }
+]

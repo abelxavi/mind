@@ -1,0 +1,90 @@
+[
+    {
+        "role": "user",
+        "content": "daddyhot: continue"
+    },
+    {
+        "role": "assistant",
+        "content": "!goal(\"Find lava, get water, make obsidian, and build a nether portal all by myself.\")"
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Find lava, get water, make obsidian, and build a nether portal all by myself.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(-2, 24, 84, 2)"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: what is your current task?"
+    },
+    {
+        "role": "assistant",
+        "content": "Building a nether portal."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: wait"
+    },
+    {
+        "role": "assistant",
+        "content": "!stop"
+    },
+    {
+        "role": "system",
+        "content": "Agent stopped. Self-prompting still active."
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Find lava, get water, make obsidian, and build a nether portal all by myself.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: come to me"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToPlayer(\"daddyhot\", 2)"
+    },
+    {
+        "role": "system",
+        "content": "Got stuck and couldn't get unstuck"
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    },
+    {
+        "role": "system",
+        "content": "You are self-prompting with the goal: 'Find lava, get water, make obsidian, and build a nether portal all by myself.'. Your next response MUST contain a command with this syntax: !commandName. Respond:"
+    },
+    {
+        "role": "system",
+        "content": "Agent process restarted."
+    },
+    {
+        "role": "assistant",
+        "content": "!goToCoordinates(-2, 24, 84, 2)"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: what is your current task?"
+    },
+    {
+        "role": "assistant",
+        "content": "Building a nether portal."
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: follow me"
+    },
+    {
+        "role": "assistant",
+        "content": "!followPlayer(\"daddyhot\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nFighting creeper!\nI'm dying!"
+    }
+]

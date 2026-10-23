@@ -1,0 +1,278 @@
+[
+    {
+        "role": "system",
+        "content": "Respond with hello world and your name"
+    },
+    {
+        "role": "assistant",
+        "content": "Hello world! I'm niggendra."
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -359.50, y: 4.00, z: 9.13 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "Ouch! !goToRememberedPlace(\"last_death_position\")"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nPath not found, but attempting to navigate anyway using destructive movements.\nYou have reached at -359.5015717280691, 4, 9.127268176438813.\n"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nI'm dying!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -359.50, y: 4.00, z: 9.22 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "Ah, I died again! Let's stay put. !stay(30)"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -359.50, y: 4.00, z: 9.35 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "!goToSurface"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached at -256, 4, 5.\nGoing to the surface at y=4.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: -252.50, y: 4.00, z: -2.76\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: plains\n- Weather: Clear\n- Time: Morning- Current Action: mode:self_preservation\n- Nearby Human Players: None.\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 5)"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -359.50, y: 4.00, z: 9.15 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "!goToSurface"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached at -255, 4, 9.\nGoing to the surface at y=4.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"stone\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nDon't have right tools to harvest stone.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFailed to collect oak_log: Timeout: Took to long to decide path to goal!.\nNo more oak_log nearby to collect.\nCollected 1 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"dirt\", 10)"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!\nI'm dying!"
+    },
+    {
+        "role": "system",
+        "content": "You died at position x: -387.72, y: 4.00, z: 37.37 in the overworld dimension with the final message: 'niggendra fell from a high place'. Your place of death is saved as 'last_death_position' if you want to return. Previous actions were stopped and you have respawned."
+    },
+    {
+        "role": "assistant",
+        "content": "!goToSurface"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound non-destructive path.\nYou have reached at -255, 4, -5.\nGoing to the surface at y=4.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 3 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!craftRecipe(\"oak_planks\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nYou do not have the resources to craft a oak_planks. It requires: oak_log: 1.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!craftRecipe(\"oak_log\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\n!!Code threw exception!!\nError: TypeError: Cannot read properties of null (reading 'length')\nStack trace:\nundefined\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!inventory"
+    },
+    {
+        "role": "system",
+        "content": "\nINVENTORY: Nothing\nWEARING: Nothing\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 3)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 3 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!inventory"
+    },
+    {
+        "role": "system",
+        "content": "\nINVENTORY: Nothing\nWEARING: Nothing\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 1 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!inventory"
+    },
+    {
+        "role": "system",
+        "content": "\nINVENTORY: Nothing\nWEARING: Nothing\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"oak_log\", 32)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound oak_log at (-261, 6, -9). Navigating...\nFound non-destructive path.\nYou have reached at -261, 6, -9.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 1 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!searchForBlock(\"oak_log\", 32)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nFound oak_log at (-261, 8, -5). Navigating...\nFound non-destructive path.\nYou have reached at -261, 8, -5.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 1 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!inventory"
+    },
+    {
+        "role": "system",
+        "content": "\nINVENTORY: Nothing\nWEARING: Nothing\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 1 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!craftRecipe(\"oak_planks\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nYou do not have the resources to craft a oak_planks. It requires: oak_log: 1.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!inventory"
+    },
+    {
+        "role": "system",
+        "content": "\nINVENTORY: Nothing\nWEARING: Nothing\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCollected 1 oak_log.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!craftRecipe(\"oak_planks\", 1)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nYou do not have the resources to craft a oak_planks. It requires: oak_log: 1.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!inventory"
+    },
+    {
+        "role": "system",
+        "content": "\nINVENTORY: Nothing\nWEARING: Nothing\n"
+    },
+    {
+        "role": "system",
+        "content": "Recent behaviors log: \nI'm dying!"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: Set niggendra's game mode to Creative Mode]"
+    },
+    {
+        "role": "assistant",
+        "content": "!collectBlocks(\"oak_log\", 1)"
+    }
+]

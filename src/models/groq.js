@@ -31,6 +31,11 @@ export class GroqCloudAPI {
     async sendRequest(turns, systemMessage, stop_seq = null) {
         // Construct messages array
         let messages = [{"role": "system", "content": systemMessage}].concat(turns);
+        
+        // GROQ FIX: Ensure the final message is always a user prompt
+        if (messages.length > 0 && messages[messages.length - 1].role !== 'user') {
+            messages.push({"role": "user", "content": "Please summarize or continue."});
+        }
 
         let res = null;
 
@@ -93,3 +98,4 @@ export class GroqCloudAPI {
         throw new Error('Embeddings are not supported by Groq.');
     }
 }
+    

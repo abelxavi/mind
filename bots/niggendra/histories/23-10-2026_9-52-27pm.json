@@ -1,0 +1,46 @@
+[
+    {
+        "role": "user",
+        "content": "daddyhot: come here"
+    },
+    {
+        "role": "assistant",
+        "content": "!goToPlayer(\"daddyhot\", 2)"
+    },
+    {
+        "role": "system",
+        "content": "Action output:\nCould not find daddyhot.\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 28.43, y: 61.00, z: 56.51\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: desert\n- Weather: Clear\n- Time: Night- Current Action: Idle\n- Nearby Human Players: None.\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    },
+    {
+        "role": "assistant",
+        "content": "!entities"
+    },
+    {
+        "role": "user",
+        "content": "daddyhot: hmm"
+    },
+    {
+        "role": "assistant",
+        "content": "Hey there! !lookAtPlayer(\"daddyhot\", \"at\")"
+    },
+    {
+        "role": "system",
+        "content": "Vision is disabled. Use other methods to describe the environment."
+    },
+    {
+        "role": "assistant",
+        "content": "!stats"
+    },
+    {
+        "role": "system",
+        "content": "\nSTATS\n- Position: x: 28.43, y: 61.00, z: 56.51\n- Gamemode: survival\n- Health: 20 / 20\n- Hunger: 20 / 20\n- Biome: desert\n- Weather: Clear\n- Time: Night- Current Action: Idle\n- Nearby Human Players: None.\n- Nearby Bot Players: None.\nAgent Modes:\n- self_preservation(ON)\n- unstuck(ON)\n- cowardice(OFF)\n- self_defense(ON)\n- hunting(OFF)\n- item_collecting(ON)\n- torch_placing(ON)\n- elbow_room(ON)\n- idle_staring(ON)\n- cheat(OFF)\n\n"
+    }
+]
